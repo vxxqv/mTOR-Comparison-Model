@@ -1,32 +1,4 @@
-# mTORC1–mTORC2 LTP Simulator
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
 
-A deterministic ODE simulation of how mTORC1-linked protein synthesis and mTORC2-linked actin support may jointly influence hippocampal late-phase long-term potentiation.
-
-## Research question
-
-How does the balance between mTORC1 and mTORC2 determine whether hippocampal potentiation persists after an induction stimulus?
-
-## Outputs
-
-The program creates five 300-dpi Matplotlib figures:
-
-1. Multipanel time-series figure
-2. Four-condition bar chart
-3. mTORC1–mTORC2 balance heatmap
-4. Phase-trajectory plot
-5. Radar profile
-
-The numerical condition summary is printed in the terminal.
-
-## Run
-
-```bash
-python -m pip install -r requirements.txt
-python mtor_ltp_simulation.py
-```
-
-All figures are written to `outputs/`.
-
-## Scientific status
-
-The model is deterministic and contains no biological noise or stochastic sampling. It has six normalized state variables and four comparison conditions. Experimental sources, DOI links and the distinction between measured findings and author-selected modelling assumptions are documented in `DATA_SOURCES.md`.
